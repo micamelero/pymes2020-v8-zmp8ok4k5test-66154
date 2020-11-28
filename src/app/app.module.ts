@@ -50,7 +50,7 @@ import { ContactosService } from './services/contactos.service';
   entryComponents: [ModalDialogComponent],
   providers: [
      {provide: APP_BASE_HREF, useValue : '/' },
-    { provide: HTTP_INTERCEPTORS, useClass: MyInterceptor, multi: true, providers: [ContactosService], providers: [ContactosService] }
+    { provide: HTTP_INTERCEPTORS, useClass: MyInterceptor, multi: true}
   ],
   bootstrap: [AppComponent]
 })
