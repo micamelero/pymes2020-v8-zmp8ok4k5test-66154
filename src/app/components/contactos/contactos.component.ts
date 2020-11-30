@@ -40,7 +40,7 @@ export class ContactosComponent implements OnInit {
       IdContacto: [null],
       Nombre: [null, [Validators.required, Validators.maxLength(30)]],
       FechaNacimiento: [null, [Validators.required,Validators.pattern("(0[1-9]|[12][0-9]|3[01])[-/](0[1-9]|1[012])[-/](19|20)[0-9]{2}") ]],
-      Telefono: [null, Validators.required, Validators.pattern("[0-9]{10}")],
+      Telefono: [null, [Validators.required, Validators.pattern("[0-9]{10}")]],
            
     });
   this.getContactos();
